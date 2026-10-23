@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local design notes, previews and backups
+/output/
+/.impeccable/
+/PRODUCT.md
+/app.zip

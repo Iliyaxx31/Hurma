@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nakhl — Hurma mağazası
 
-## Getting Started
+Next.js 16.4.2 ve React 19 ile hazırlanmış Farsça, sağdan sola alışveriş sitesi demosu.
 
-First, run the development server:
+## Özellikler
+
+- Telefon ve tablet uyumlu tasarım, açık/koyu tema.
+- Sekiz örnek ürün, kategori filtreleri, arama ve favoriler.
+- 500 g / 1 kg seçimi ve miktar değiştirilebilen sepet.
+- Yerel görseller ve Vazirmatn yazı tipi.
+
+Ürünler, fiyatlar ve görseller örnektir. Gerçek ödeme, sipariş kaydı, stok ve yönetim paneli bağlı değildir. Sepet ve favoriler oturum içinde bellekte tutulur; tema tercihi tarayıcıda saklanır.
+
+## Yerel geliştirme
+
+Node.js 24 LTS ve npm kullanılması önerilir.
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcı: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Test sunucusunda çalıştırma
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm ci
+npm run build
+npm start
+```
 
-## Learn More
+Uygulama varsayılan olarak 3000 portunda çalışır. Sunucuda uygulamayı bir süreç yöneticisi veya container ile çalıştırıp alan adını HTTPS üzerinden bu porta yönlendirin. Bu demo için API anahtarı veya .env dosyası gerekmiyor.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm audit --omit=dev
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+.next, node_modules, yerel tasarım notları, yedekler ve önizleme çıktıları Git'e dahil edilmez.
