@@ -9,7 +9,6 @@ import { Icon, Palm } from "./icons";
 import ProductPhoto from "./product-photo";
 import ThemeToggle from "./theme-toggle";
 import TasteFinder from "./taste-finder";
-import Faq from "./faq";
 
 export default function Storefront() {
   const [category, setCategory] = useState("همه خرماها");
@@ -126,7 +125,7 @@ export default function Storefront() {
         <div className="story-copy"><h2>خوشی‌های کوچیک،<br/><em>قصه‌های قشنگ.</em></h2><p>یک فنجان چای، چند دانه خرما و فرصتی برای کنار هم بودن. نخل یادآور همین لحظه‌های کوچک است؛ وقتی یک طعم آشنا، روزمان را کمی شیرین‌تر می‌کند.</p><a className="text-link" href="#products">یک لحظهٔ شیرین انتخاب کن <Icon name="arrow"/></a><div className="story-signature"><Palm/><span>با مهر، نخل</span></div></div>
       </section>
 
-      <Faq />
+      <section className="faq wrap" id="faq"><div><h2>چیزی توی ذهنت مونده؟</h2><p>قبل از انتخاب، این‌ها رو بخون.</p></div><div className="faq-items"><details><summary>تفاوت خرمای نرم و خشک چیست؟ <span>+</span></summary><p>خرمای نرم رطوبت بیشتری دارد و بافت آن لطیف‌تر است. خرمای خشک رطوبت کمتری دارد؛ انتخاب بین آن‌ها بیشتر به سلیقهٔ شما بستگی دارد.</p></details><details><summary>خرما را چطور نگهداری کنیم؟ <span>+</span></summary><p>خرما را در ظرف دربسته و دور از نور و گرما نگه دارید. برای خرماهای نرم مانند مضافتی، نگهداری در یخچال مناسب‌تر است. دستور نگهداری روی بسته‌بندی را هم بررسی کنید.</p></details><details><summary>آیا می‌توانم از این نسخه خرید کنم؟ <span>+</span></summary><p>این سایت یک نمونهٔ طراحی است. محصولات، عکس‌ها و قیمت‌ها نمایشی هستند. انتخاب محصولات و سبد خرید را می‌توانید امتحان کنید؛ پرداخت و ثبت سفارش واقعی فعال نیست.</p></details></div></section>
     </main>
     <footer><div className="footer-main wrap"><a className="brand" href="#"><Palm/><div><strong>نخل</strong><span lang="en" dir="ltr">NAKHL</span></div></a><p>شیرینیِ سادهٔ زندگی.</p><a href="#products">فروشگاه</a><a href="#taste">خرمای من</a><a href="#story">قصهٔ نخل</a><a href="#main" className="back-top">برگردیم بالا <Icon name="arrow"/></a></div><div className="footer-bottom wrap"><span>نمونهٔ طراحی؛ برند، محصولات و قیمت‌ها نمایشی هستند.</span><span lang="en" dir="ltr">SMALL FRUIT. SWEET MOMENTS.</span></div></footer>
     <div className={`toast ${notice ? "visible" : ""}`} role="status" aria-live="polite">{notice && <><Icon name="check"/>{notice}</>}</div>
