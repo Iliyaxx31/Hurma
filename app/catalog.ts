@@ -13,7 +13,7 @@ export type Product = {
 
 // Illustrative products and toman prices for the storefront design prototype.
 export const products: Product[] = [
-  { id: "mazafati", name: "خرمای مضافتی", english: "MAZAFATI", origin: "بم، کرمان", kind: "نرم", note: "نرم و لطیف، با شیرینی دلنشین؛ همراه همیشگی یک فنجان چای.", price: 145000, photo: "/images/dates-products.png", tile: "0% 0%", tag: "برای کنار چای" },
+  { id: "mazafati", name: "خرمای مضافتی", english: "MAZAFATI", origin: "بم، کرمان", kind: "نرم", note: "نرم و لطیف، با شیرینی دل‌نشین؛ همراه همیشگی یک فنجان چای.", price: 145000, photo: "/images/dates-products.png", tile: "0% 0%", tag: "همراه چای" },
   { id: "piarom", name: "خرمای پیارم", english: "PIAROM", origin: "حاجی‌آباد، هرمزگان", kind: "نیمه‌خشک", note: "کشیده و خوش‌طعم، با بافت نیمه‌خشک و طعمی شبیه کارامل.", price: 285000, photo: "/images/dates-products.png", tile: "100% 100%", tag: "طعم کاراملی" },
   { id: "medjool", name: "خرمای مجول", english: "MEDJOOL", origin: "جنوب ایران", kind: "نرم", note: "درشت و گوشتی، با شیرینی غنی؛ انتخابی برای لحظه‌های خاص.", price: 320000, photo: "/images/dates-products.png", tile: "0% 100%", tag: "درشت و گوشتی" },
   { id: "zahedi", name: "خرمای زاهدی", english: "ZAHEDI", origin: "دشتستان، بوشهر", kind: "خشک", note: "طلایی و خوش‌خوراک، با بافت خشک‌تر و شیرینی ملایم.", price: 95000, photo: "/images/dates-products.png", tile: "100% 0%", tag: "شیرینی ملایم" },

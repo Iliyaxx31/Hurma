@@ -8,7 +8,7 @@ const vazirmatn = localFont({ src: "../public/fonts/vazirmatn.woff2", display: "
 
 export const metadata: Metadata = {
   title: "نخل | شیرینیِ سادهٔ زندگی",
-  description: "نمونه فروشگاه خرمای نخل؛ کشف طعم‌های مضافتی، پیارم، مجول و زاهدی.",
+  description: "نمونهٔ فروشگاه خرمای نخل؛ کشف طعم‌های مضافتی، پیارم، مجول و زاهدی.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
